@@ -9,25 +9,27 @@
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- Name comes first -->
+              <!-- Name must come first -->
               <xsd:element name="Name" type="xsd:string"/>
-              <!-- Phone comes second: one or more allowed -->
+              <!-- Phone element(s) come second -->
               <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
               <!-- Address comes third -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <xsd:element name="Number" type="xsd:string"/>
+                    <!-- Using int for Number as required -->
+                    <xsd:element name="Number" type="xsd:int"/>
                     <xsd:element name="Street" type="xsd:string"/>
                     <xsd:element name="City" type="xsd:string"/>
                     <xsd:element name="State" type="xsd:string"/>
                     <xsd:element name="Zip" type="xsd:string"/>
                   </xsd:sequence>
+                  <!-- Optional attribute; note that the sample JSON expects "Sky Habor" (misspelling is intentional) -->
                   <xsd:attribute name="NearestAirport" type="xsd:string" use="optional"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- Required attribute: Rating -->
+            <!-- Required attribute for each Hotel -->
             <xsd:attribute name="Rating" type="xsd:decimal" use="required"/>
           </xsd:complexType>
         </xsd:element>
