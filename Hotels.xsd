@@ -2,15 +2,16 @@
 <xsd:schema 
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified">
-    
+  
   <xsd:element name="Hotels">
     <xsd:complexType>
       <xsd:sequence>
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
+              <!-- Name comes first -->
               <xsd:element name="Name" type="xsd:string"/>
-              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- Address comes second -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
@@ -23,13 +24,15 @@
                   <xsd:attribute name="NearestAirport" type="xsd:string" use="optional"/>
                 </xsd:complexType>
               </xsd:element>
+              <!-- Phone comes last; one or more allowed -->
+              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
             </xsd:sequence>
-            <!-- Required attribute Rating -->
+            <!-- Required attribute: Rating -->
             <xsd:attribute name="Rating" type="xsd:decimal" use="required"/>
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-  
+
 </xsd:schema>
