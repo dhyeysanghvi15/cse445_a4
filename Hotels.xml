@@ -2,18 +2,19 @@
 <Hotels>
     <Hotel Rating="4.2">
         <Name>Westin</Name>
-        <Address NearestAirport="Sky Harbor">
+        <Phone>480-968-8885</Phone>
+        <Phone>800-937-8461</Phone>
+        <Address NearestAirport="Sky Habor">
             <Number>11</Number>
             <Street>E 7th St</Street>
             <City>Tempe</City>
             <State>AZ</State>
             <Zip>85281</Zip>
         </Address>
-        <Phone>480-968-8885</Phone>
-        <Phone>800-937-8461</Phone>
     </Hotel>
     <Hotel Rating="3.8">
         <Name>Hilton</Name>
+        <Phone>123-456-7890</Phone>
         <Address>
             <Number>50</Number>
             <Street>Main St</Street>
@@ -21,10 +22,11 @@
             <State>AZ</State>
             <Zip>85001</Zip>
         </Address>
-        <Phone>123-456-7890</Phone>
     </Hotel>
     <Hotel Rating="4.5">
         <Name>Marriott</Name>
+        <Phone>987-654-3210</Phone>
+        <Phone>555-123-4567</Phone>
         <Address NearestAirport="Phoenix Sky Harbor">
             <Number>100</Number>
             <Street>First Ave</Street>
@@ -32,11 +34,10 @@
             <State>AZ</State>
             <Zip>85250</Zip>
         </Address>
-        <Phone>987-654-3210</Phone>
-        <Phone>555-123-4567</Phone>
     </Hotel>
     <Hotel Rating="3.7">
         <Name>Holiday Inn</Name>
+        <Phone>800-111-2222</Phone>
         <Address>
             <Number>200</Number>
             <Street>Second St</Street>
@@ -44,10 +45,10 @@
             <State>AZ</State>
             <Zip>85701</Zip>
         </Address>
-        <Phone>800-111-2222</Phone>
     </Hotel>
     <Hotel Rating="3.0">
         <Name>Best Western</Name>
+        <Phone>800-333-4444</Phone>
         <Address NearestAirport="Tucson International">
             <Number>300</Number>
             <Street>Third St</Street>
@@ -55,10 +56,10 @@
             <State>AZ</State>
             <Zip>85705</Zip>
         </Address>
-        <Phone>800-333-4444</Phone>
     </Hotel>
     <Hotel Rating="4.0">
         <Name>Hyatt</Name>
+        <Phone>800-555-6666</Phone>
         <Address>
             <Number>400</Number>
             <Street>Fourth Ave</Street>
@@ -66,10 +67,10 @@
             <State>AZ</State>
             <Zip>86001</Zip>
         </Address>
-        <Phone>800-555-6666</Phone>
     </Hotel>
     <Hotel Rating="3.9">
         <Name>Comfort Inn</Name>
+        <Phone>800-777-8888</Phone>
         <Address NearestAirport="Flagstaff Pulliam">
             <Number>500</Number>
             <Street>Fifth Blvd</Street>
@@ -77,10 +78,11 @@
             <State>AZ</State>
             <Zip>86004</Zip>
         </Address>
-        <Phone>800-777-8888</Phone>
     </Hotel>
     <Hotel Rating="4.7">
         <Name>Renaissance</Name>
+        <Phone>800-999-0000</Phone>
+        <Phone>800-222-3333</Phone>
         <Address>
             <Number>600</Number>
             <Street>Sixth Ave</Street>
@@ -88,11 +90,10 @@
             <State>AZ</State>
             <Zip>86403</Zip>
         </Address>
-        <Phone>800-999-0000</Phone>
-        <Phone>800-222-3333</Phone>
     </Hotel>
     <Hotel Rating="4.3">
         <Name>DoubleTree</Name>
+        <Phone>800-444-5555</Phone>
         <Address NearestAirport="Yuma International">
             <Number>700</Number>
             <Street>Seventh St</Street>
@@ -100,10 +101,10 @@
             <State>AZ</State>
             <Zip>85364</Zip>
         </Address>
-        <Phone>800-444-5555</Phone>
     </Hotel>
     <Hotel Rating="4.1">
         <Name>Embassy Suites</Name>
+        <Phone>800-666-7777</Phone>
         <Address>
             <Number>800</Number>
             <Street>Eighth Ave</Street>
@@ -111,6 +112,5 @@
             <State>AZ</State>
             <Zip>86301</Zip>
         </Address>
-        <Phone>800-666-7777</Phone>
     </Hotel>
 </Hotels>
