@@ -11,7 +11,9 @@
             <xsd:sequence>
               <!-- Name comes first -->
               <xsd:element name="Name" type="xsd:string"/>
-              <!-- Address comes second -->
+              <!-- Phone comes second: one or more allowed -->
+              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- Address comes third -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
@@ -24,8 +26,6 @@
                   <xsd:attribute name="NearestAirport" type="xsd:string" use="optional"/>
                 </xsd:complexType>
               </xsd:element>
-              <!-- Phone comes last; one or more allowed -->
-              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
             </xsd:sequence>
             <!-- Required attribute: Rating -->
             <xsd:attribute name="Rating" type="xsd:decimal" use="required"/>
@@ -34,5 +34,5 @@
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-
+  
 </xsd:schema>
