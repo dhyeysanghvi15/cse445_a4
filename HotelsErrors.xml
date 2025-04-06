@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Error 1: Incorrect root element (should be <Hotels>) -->
-<Hotel>
-    <!-- Hotel 1: Westin (valid) -->
+<Hotels>
     <Hotel Rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
         <Phone>800-937-8461</Phone>
-        <Address NearestAirport="Sky Harbor">
+        <Address NearestAirport="Sky Habor">
             <Number>11</Number>
             <Street>E 7th St</Street>
             <City>Tempe</City>
@@ -14,8 +12,7 @@
             <Zip>85281</Zip>
         </Address>
     </Hotel>
-    <!-- Hotel 2: Hilton (Error 2: Missing required attribute "Rating") -->
-    <Hotel>
+    <Hotel Rating="3.8">
         <Name>Hilton</Name>
         <Phone>123-456-7890</Phone>
         <Address>
@@ -26,10 +23,10 @@
             <Zip>85001</Zip>
         </Address>
     </Hotel>
-    <!-- Hotel 3: Marriott (Error 3: Missing <Phone> element) -->
     <Hotel Rating="4.5">
         <Name>Marriott</Name>
-        <!-- Phone element omitted -->
+        <Phone>987-654-3210</Phone>
+        <Phone>555-123-4567</Phone>
         <Address NearestAirport="Phoenix Sky Harbor">
             <Number>100</Number>
             <Street>First Ave</Street>
@@ -38,7 +35,6 @@
             <Zip>85250</Zip>
         </Address>
     </Hotel>
-    <!-- Hotel 4: Holiday Inn (Error 4: <Address> missing its closing tag) -->
     <Hotel Rating="3.7">
         <Name>Holiday Inn</Name>
         <Phone>800-111-2222</Phone>
@@ -48,12 +44,10 @@
             <City>Tucson</City>
             <State>AZ</State>
             <Zip>85701</Zip>
-        <!-- Missing closing tag for Address -->
+        </Address>
     </Hotel>
-    <!-- Hotel 5: Best Western (Error 5: Duplicate <Name> element) -->
     <Hotel Rating="3.0">
         <Name>Best Western</Name>
-        <Name>Duplicate Name</Name>
         <Phone>800-333-4444</Phone>
         <Address NearestAirport="Tucson International">
             <Number>300</Number>
@@ -63,7 +57,6 @@
             <Zip>85705</Zip>
         </Address>
     </Hotel>
-    <!-- The remaining hotels are valid -->
     <Hotel Rating="4.0">
         <Name>Hyatt</Name>
         <Phone>800-555-6666</Phone>
@@ -120,4 +113,4 @@
             <Zip>86301</Zip>
         </Address>
     </Hotel>
-</Hotel>
+</Hotels>
