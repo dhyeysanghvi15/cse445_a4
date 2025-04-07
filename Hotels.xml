@@ -6,7 +6,7 @@
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
         <Phone>800-937-8461</Phone>
-        <Address NearestAirport="Sky Habor">
+        <Address NearstAirport="Sky Habor">
             <Number>11</Number>
             <Street>E 7th St</Street>
             <City>Tempe</City>
@@ -29,7 +29,7 @@
         <Name>Marriott</Name>
         <Phone>987-654-3210</Phone>
         <Phone>555-123-4567</Phone>
-        <Address NearestAirport="Phoenix Sky Harbor">
+        <Address NearstAirport="Phoenix Sky Harbor">
             <Number>100</Number>
             <Street>First Ave</Street>
             <City>Scottsdale</City>
@@ -51,7 +51,7 @@
     <Hotel Rating="3.0">
         <Name>Best Western</Name>
         <Phone>800-333-4444</Phone>
-        <Address NearestAirport="Tucson International">
+        <Address NearstAirport="Tucson International">
             <Number>300</Number>
             <Street>Third St</Street>
             <City>Tucson</City>
@@ -73,7 +73,7 @@
     <Hotel Rating="3.9">
         <Name>Comfort Inn</Name>
         <Phone>800-777-8888</Phone>
-        <Address NearestAirport="Flagstaff Pulliam">
+        <Address NearstAirport="Flagstaff Pulliam">
             <Number>500</Number>
             <Street>Fifth Blvd</Street>
             <City>Flagstaff</City>
@@ -96,7 +96,7 @@
     <Hotel Rating="4.3">
         <Name>DoubleTree</Name>
         <Phone>800-444-5555</Phone>
-        <Address NearestAirport="Yuma International">
+        <Address NearstAirport="Yuma International">
             <Number>700</Number>
             <Street>Seventh St</Street>
             <City>Yuma</City>
@@ -116,4 +116,3 @@
         </Address>
     </Hotel>
 </Hotels>
-
