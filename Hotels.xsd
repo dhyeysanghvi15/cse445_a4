@@ -8,31 +8,29 @@
   <xsd:element name="Hotels">
     <xsd:complexType>
       <xsd:sequence>
-        <!-- Each Hotel element appears one or more times -->
+        <!-- Each Hotel element may appear one or more times -->
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- First element: Name -->
+              <!-- The required order: Name, then one or more Phone, then Address -->
               <xsd:element name="Name" type="xsd:string"/>
-              <!-- Second element: Phone (one or more) -->
               <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
-              <!-- Third element: Address -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <!-- Number is an integer -->
+                    <!-- Number is declared as an int -->
                     <xsd:element name="Number" type="xsd:int"/>
                     <xsd:element name="Street" type="xsd:string"/>
                     <xsd:element name="City" type="xsd:string"/>
                     <xsd:element name="State" type="xsd:string"/>
                     <xsd:element name="Zip" type="xsd:string"/>
                   </xsd:sequence>
-                  <!-- Optional attribute for Address -->
-                  <xsd:attribute name="NearestAirport" type="xsd:string" use="optional"/>
+                  <!-- Note: Attribute name is "NearstAirport" (as required) -->
+                  <xsd:attribute name="NearstAirport" type="xsd:string" use="optional"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- Required attribute for each Hotel -->
+            <!-- The Hotel element has a required Rating attribute -->
             <xsd:attribute name="Rating" type="xsd:decimal" use="required"/>
           </xsd:complexType>
         </xsd:element>
